@@ -507,24 +507,6 @@ Diese Projektvorlage steht unter der MIT-Lizenz. Details stehen in `LICENSE`.
 Abhängigkeiten, Dienste und Drittanbieter, die in Beispielen erwähnt werden,
 unterliegen ihren eigenen Lizenz- und Nutzungsbedingungen.
 
-## Impressum
-
-Angaben gemäß § 5 DDG (Digitale-Dienste-Gesetz)
-
-Michael Gahn DESIGN  
-Michael Gahn  
-Dr.-Theodor-Brugsch Str. 12  
-08529 Plauen  
-Sachsen  
-Deutschland
-
-Tel.: +49 (0) 176 557 647 48  
-E-Mail: Anfrage@Michael-Gahn.de
-
-Umsatzsteuer-Identifikationsnummer gemäß §27 a Umsatzsteuergesetz:  
-Steuernummer: 223/222/02451  
-Ust-ID: DE288143343
-
 ## 🔒 Lokal-only — Playtests, Backups & sensible Daten
 
 Diese Daten dürfen **niemals** die lokale Maschine verlassen — weder nach GitHub noch nach Live/Deploy:
@@ -534,4 +516,27 @@ Diese Daten dürfen **niemals** die lokale Maschine verlassen — weder nach Git
 - **Sensible Daten:** `.env*` (außer `.env.example`), Tokens, API-Keys, Passwörter, `*.pem`, `*.key`, Zugangsdaten — niemals committen/pushen/deployen.
 - **Push-Disziplin:** Nur den Hauptbranch (`main`) pushen, **niemals** `git push --all`/`--mirror`. `PlayTest*`-Branches werden nie gepusht.
 
-Alle genannten Muster gehören in `.gitignore`. Technische Absicherung: der Pre-Push-Hook aus dem [DEV-Skill](https://github.com/MichaelGahnDESIGN/DEV-Skill) (`dev/hooks/pre-push`) blockiert solche Pushes hart — empfohlen, am besten global via `git config --global core.hooksPath ~/.git-hooks`.
+Alle genannten Muster gehören in `.gitignore`. Technische Absicherung: der Pre-Push-Hook aus dem [MGD-DEV-Skill](https://github.com/MichaelGahnDESIGN/MGD-DEV-Skill) (`dev/hooks/pre-push`) blockiert solche Pushes hart — empfohlen, am besten global via `git config --global core.hooksPath ~/.git-hooks`.
+
+---
+
+## Verwandte MGD Projekte
+
+| Projekt | Beschreibung |
+|---------|-------------|
+| [MGD-App-Updater-Skill](https://github.com/MichaelGahnDESIGN/MGD-App-Updater-Skill) | Software-Update-Systeme planen und implementieren |
+| [MGD-Bugreport-Skill](https://github.com/MichaelGahnDESIGN/MGD-Bugreport-Skill) | Feedback-Hub: Bug-Meldung, Ideen und Support |
+| [MGD-ToDo-SKILL](https://github.com/MichaelGahnDESIGN/MGD-ToDo-SKILL) | Aufgabenmanagement direkt im Projekt-Repo |
+| [MGD-DEV-Skill](https://github.com/MichaelGahnDESIGN/MGD-DEV-Skill) | Release, Sync, Backup und Wissensdokumentation |
+| [MGD-ProjectClean-Skill](https://github.com/MichaelGahnDESIGN/MGD-ProjectClean-Skill) | Abschluss- und Aufräum-Workflow |
+| [MGD-AI-PlayTest-Skill](https://github.com/MichaelGahnDESIGN/MGD-AI-PlayTest-Skill) | Live-Playtest aus Nutzerperspektive |
+| [MGD-Backup-Skill](https://github.com/MichaelGahnDESIGN/MGD-Backup-Skill) | Automatisierte lokale und Cloud-Backups |
+| [MGD-AI-Project-Updater-Skill](https://github.com/MichaelGahnDESIGN/MGD-AI-Project-Updater-Skill) | Geführter Projekt-Assistent für Staging und Updates |
+
+→ Alle öffentlichen Projekte: [github.com/MichaelGahnDESIGN](https://github.com/MichaelGahnDESIGN)
+
+---
+
+## Impressum
+
+Angaben gemäß § 5 DDG — Siehe [`IMPRESSUM.md`](IMPRESSUM.md).
